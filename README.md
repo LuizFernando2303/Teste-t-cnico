@@ -1,1 +1,15 @@
-"# Sistema de Controle de Gastos\n\nAplicação web para gerenciamento de gastos e receitas.\n\n## Tecnologias\n\n### Backend\n- ASP.NET Core\n- Entity Framework Core\n- SQLite\n\n### Frontend\n- React\n- Vite\n\n---\n\n# Estrutura do Projeto\n\n```\nControleDeGastos\n│\n├ Controllers\n├ Models\n├ Migrations\n├ Program.cs\n├ AppDbContext.cs\n│\n├ frontend\n│ ├ src\n│ ├ package.json\n│ └ vite.config.ts\n│\n└ gastos.db\n```\n\n---\n\n# Requisitos\n\nInstalar:\n\n- .NET 8+\n- Node.js\n- npm\n\n---\n\n# Clonar o projeto\n\n```bash\ngit clone https://github.com/LuizFernando2303/Teste-t-cnico.git\ncd Teste-t-cnico\n```\n\n---\n\n# Instalar dependências do frontend\n\n```bash\ncd frontend\nnpm install\ncd ..\n```\n\n---\n\n# Criar banco de dados\n\nO banco utiliza SQLite.\n\nCriar migrations:\n\n```bash\ndotnet ef migrations add InitialCreate\n```\n\nAplicar migrations:\n\n```bash\ndotnet ef database update\n```\n\n---\n\n# Rodar o projeto\n\nExecute:\n\n```bash\ndotnet run\n```\n\nIsso irá iniciar:\n\nBackend\nhttp://localhost:5000\n\nSwagger\nhttp://localhost:5000/swagger\n\nFrontend\nhttp://localhost:5001\n\n---\n\n# Resetar banco de dados\n\nSe precisar recriar o banco:\n\n```bash\nrm gastos.db\nrm -r Migrations\n\ndotnet ef migrations add InitialCreate\ndotnet ef database update\n```\n\n---\n\n# API\n\nA documentação da API está disponível em:\n\nhttp://localhost:5000/swagger\n\n---\n\n# Autor\n\nLuiz Fernando\n"
+# Rodar o projeto
+
+### 1. Instalar dependências do frontend
+
+```bash
+cd ClientApp
+npm install
+cd ..
+
+2. Criar banco de dados
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+3. Iniciar aplicação
+dotnet run
