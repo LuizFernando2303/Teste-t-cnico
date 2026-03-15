@@ -1,8 +1,7 @@
 # Rodar o projeto
 
-### 1. Instalar dependências do frontend
-
 ```bash
+1. Instalar dependências do frontend
 cd ClientApp
 npm install
 cd ..
