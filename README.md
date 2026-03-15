@@ -2,7 +2,7 @@
 
 ```bash
 git clone https://github.com/LuizFernando2303/Teste-t-cnico.git
-cd Teste-t-cnico
+cd Teste-t-cnico/
 
 dotnet restore
 
