@@ -1,14 +1,16 @@
 # Rodar o projeto
 
 ```bash
-1. Instalar dependências do frontend
+git clone https://github.com/LuizFernando2303/Teste-t-cnico.git
+cd Teste-t-cnico
+
+dotnet restore
+
 cd ClientApp
 npm install
 cd ..
 
-2. Criar banco de dados
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 
-3. Iniciar aplicação
 dotnet run
